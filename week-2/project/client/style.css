@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Londrina+Solid:wght@100;300;400;900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Londrina+Solid:wght@100;300;400;900&family=Lugrasimo&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+/* Fonts */
+.londrina-solid-thin {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.londrina-solid-light {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.londrina-solid-regular {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.londrina-solid-black {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lugrasimo-regular {
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.londrina-shadow-regular {
+  font-family: "Londrina Shadow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: black;
+}
+
+/* DOM */
+:root {
+  background-color: white;
+  font-family: Avenir, Helvetica, sans-serif;
+  color: black;
+  margin: 0;
+}
+
+.header{
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: auto;
+}
+
+/* Header CSS */
+.header-container {
+  overflow: hidden;
+  padding: 20px 10px;
+  padding-bottom: 60px;
+}
+
+.header-left {
+  float: left;
+  height: 100px;
+  width: 310px;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-left img {
+  height: 80px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.header-left h1 {
+  float: right;
+  height: 80%;
+  font-size: 45px;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.header-right {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+}
+
+.header-right button {
+display: flex;
+width: auto;
+background-color: white;
+border: solid;
+border-width: 3px;
+border-color: rgb(3, 7, 89);
+border-radius: 0.1rem;
+border-radius: 16px;
+box-sizing: border-box;
+color:  rgb(3, 7, 89);
+cursor: pointer;
+padding: 15px 16px;
+text-align: center;
+text-transform: uppercase;
+touch-action: manipulation;
+}
+
+/* Home page CSS */
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background: transparent;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(3, 7, 89);
+  border-radius: 0.3rem;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.057);
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 40px;
+  margin-bottom: 60px;
+}
+
+.card img {
+  height: 100%;
+}
+
+.top-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+}
+
+.bottom-container {
+  margin-top:30px;
+  margin-left: 10px;
+}
+
+.bottom-container h3 {
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.bottom-container p {
+  margin: 2px;
+}
+
+.bottom-container a {
+  color: rgb(228, 16, 133);
+  text-decoration: none;
+}
+
+/* 404 Page CSS */
+
+.fof-container{
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  color: black;
+}
+
+.fof {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fof h1 {
+  color:rgb(26, 25, 25);
+  font-size: 50px;
+  display: inline-block;
+  padding-right: 12px;
+  animation: type .6s alternate infinite;
+}
+
+@keyframes type {
+  from {box-shadow: inset -3px 0px 0px #888;}
+  to {box-shadow: inset -3px 0px 0px transparent;}
+}
+
+/* Detail Page CSS*/
+
+.workshop-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-container {
+  padding-left: 100px;
+  width: 40vw;
+}
+
+.image-container img {
+  width: 80%;
+}
+
+.workshop-details {
+  width: 45vw;
+}
+
+.workshopContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 33%;
+}
+
+.workshopTitle {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  width: 33%;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.workshopTitle:hover {
+  cursor: pointer;
+  color: lightskyblue;
+}
+
+
+
+.conceptsContainer {
+  width: 33%;
+  margin-left: auto;
+}
+
+.leetcodeLink, .textContent, .workshopVideoLink {
+  margin: 0.25rem; 
+  width: 43%;
+  padding: 0rem 0.5rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.container {
+  border: 4px solid black;
+  border-radius: 0.8rem;
+  box-sizing: content-box;
+  padding: 1rem;
+}
+
+aside{
+  padding: 1rem;
+}
+
+#main-content{
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  color: black;
+}
