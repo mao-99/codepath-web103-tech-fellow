@@ -1,5 +1,5 @@
 const renderWorkshops = async () => {
-    const response = await fetch('http://localhost:3001/workshops')
+    const response = await fetch('/workshops')
     const data = await response.json()
     const mainContent = document.getElementById("main-content")
 

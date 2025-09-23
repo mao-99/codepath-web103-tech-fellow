@@ -21,7 +21,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/workshops': {
-        target: 'http://localhost:3000'
+        target: 'http://localhost:3001'
       }
     }
   }
