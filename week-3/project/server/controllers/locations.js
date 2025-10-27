@@ -1,9 +1,9 @@
 import { pool } from "../config/database.js";
 
-const getEvents = async (req, res) => {
+const getLocations = async (req, res) => {
     try {
         const selectQuery = `
-            SELECT * FROM events ORDER BY id ASC;
+            SELECT * FROM locations ORDER BY id ASC;
         `;
         const results = await pool.query(selectQuery);
         res.status(200).json(results.rows);
@@ -12,17 +12,17 @@ const getEvents = async (req, res) => {
     }
 }
 
-const getEventById = async (req, res) => {
+const getLocationById = async (req, res) => {
     try {
         const selectQuery = `
-            SELECT id, title, date, time, location_id, image FROM events where id = $1;
+            SELECT id, name, image, city, state, zip FROM locations where id = $1;
         `
-        const eventId = parseInt(req.params.eventId);
-        const results = await pool.query(selectQuery, [eventId]);
+        const locationId = parseInt(req.params.locationId);
+        const results = await pool.query(selectQuery, [locationId]);
         res.status(200).json(results.rows[0]); 
     } catch (error) {
         res.status(409).json( { error: error.message} )
     }
 }
 
-export default {getEventById, getEvents}
+export default {getLocationById, getLocations}

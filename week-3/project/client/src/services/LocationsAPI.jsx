@@ -1,4 +1,4 @@
-const API_BASE = '/api/locations'
+const API_BASE = 'http://localhost:3000/api/locations'
 
 const getAllLocations = async () => {
   try {
